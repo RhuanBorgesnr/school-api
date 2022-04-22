@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+<h1>Aulas</h1>    
+{% for aula in aulas.all %}
+      
+<div class="child">
+    
+    <td class="tbody-column">
+        <a href="{% url 'alunos'  %}" name="id">{{ aula.nome }}</a>       
+        
+    </td>
+</div>
+
+</form>
+
+{% endfor %}
+
+
+    

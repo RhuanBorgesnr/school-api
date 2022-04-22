@@ -1,0 +1,45 @@
+
+body{
+    font-family: "Crimson Text", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
+}
+h1{
+    display:flex;
+        justify-content: center;
+}
+.container {
+    position: relative;
+    }
+
+.fc{
+    
+        padding-bottom: 50px;
+        display:flex;
+        justify-content: center;
+ 
+}
+.centerTable{
+    
+    display:flex;
+    justify-content: center;
+
+    
+}
+.presenca{
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+
+.child{
+    display:flex;
+    justify-content: center;
+
+}
+.botao-presenca{
+    display:flex;
+    justify-content: center;
+
+}

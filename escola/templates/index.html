@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"> -->
+    <title>Controle de presença</title>
+</head>
+
+<body>
+
+    <h1>Lista de Frequência</h1>
+
+    <div class="centerTable">
+
+        <form action="." method="GET">
+            <input type="text" name="search" id="search" class="" placeholder="Busca">
+            <input type="submit" value="OK">
+        </form>
+    </div>
+
+
+
+
+    <form action="" method="" class="fc">
+
+        <table class="centerTable">
+            <tr>
+                <th>Alunos</th>
+
+
+
+                {% for aluno in alunos %}
+            <tr>
+            <tr>
+                <div class="child">
+                    <td>{{ aluno.nome }}</td>
+
+                    <td>
+                    <form action="{% url 'alunos' %}" method="POST" enctype="multipart/form-data"> 
+                        <input type="checkbox" class="presenca" multiple name="presente_aula" value="{{ aluno.presente_aula }}" >
+                        {% endfor %}
+               
+                        
+                    </form>
+                   
+                    </td>
+            </tr>
+           
+        </table>
+        </div>
+    </form>
+    
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
