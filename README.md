@@ -22,7 +22,7 @@ python manage.py runserver
 ### Acessando:
 
 - Link para acessar a pagina web:  http://127.0.0.1:8000/
-- Aqui você tera acesso a documentação da api: http://127.0.0.1:8000/api/doc/#operation/alunos_create
+- Aqui você tera acesso a documentação da api: http://127.0.0.1:8000/api/doc/ ou http://127.0.0.1:8000/doc/
 - Acesso API: http://127.0.0.1:8000/api/alunos/
 
 ### PUT e DELETE:
