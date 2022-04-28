@@ -2,7 +2,7 @@
 # API controle de presença
 
 sistema para controle de presença dos
-alunos de uma aula.
+alunos aonde cada aluno está matriculado em determinada aula.
 
 ### Clonando repositorio:
 ```sh
